@@ -1,0 +1,84 @@
+
+* Questions
+** TODO 如何对 DOM Element 进行截图? :HOLD:
++ 计算<object> <embed> 的相对位置?
+   
+** 如何与 Flash 元素交互?
+** TODO 如何管理 Network Access?
++ https://developer.mozilla.org/en-US/docs/Observer_Notifications
++ https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIObserver
++ https://developer.mozilla.org/en-US/Add-ons/Overlay_Extensions/XUL_School/Observer_Notifications
++ https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/NsIRequestObserver
++ https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/NsIRequest
++ https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIHttpActivityObserver
++ https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIChannel
+** DONE 如何管理 Tab(buffer) : [open, close]?
+   CLOSED: [2014-05-26 Mon 21:26]
++ See: *commands.js* open_new_buffer_background(window, url)
+** DONE 如何与外部程序通信?
+** DONE 如何访问页面的 DOM 结构?
+** DONE 如何管理 Cookies?
+** DONE 如何注入 Javascript 到 web 页面?                               :HOLD:
+   
+   
+* Answers   
+** Cookie Management
++ See *moudles/cookie.js* ==> *test_cookie()*
+  
++ XPCOM Examples(Cookie manage) 
+  https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/Tutorial/XPCOM_Examples  
+  
++ Classes ==> Links
+  - nsICookie  https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsICookie
+  - nsICookie2  https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsICookie2
+  - nsICookieManager  https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsICookieManager
+  - nsICookieManager2  https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsICookieManager2
+  - nsISimpleEnumerator  https://developer.mozilla.org/en-US/docs/XPCOM_Interface_Reference/nsISimpleEnumerator
+
+** DOM Access   
++ See
+  1. *modules/commands.js*
+     
+** Inject Javascript
++ See
+  1. *modules/commands.js*
+  2. *selenium-ide/chrome/content/selenium-core/scripts/selenium-api.js* ==> *doRunScript*
+   
+** Interact with outside
++ Using sockets (nsIServerSocket) in XPCOM component
+  http://stackoverflow.com/questions/3176442/using-sockets-nsiserversocket-in-xpcom-component-firefox-extension-sockets
++ See *commands.js*
+    
+* Steps
+** You should learn javascript first!!!  
+
+   
+   
+* Links
+** https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference  
+** https://developer.mozilla.org/en-US/docs/The_Joy_of_XUL
+** https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference
+** https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_bindings/XPConnect   
+** https://developer.mozilla.org/en/docs/Creating_a_Python_XPCOM_component
+** Build xulrunner
+   https://developer.mozilla.org/en-US/docs/Mozilla/Projects/XULRunner/Build_Instructions
+** XrayWrapper
+   https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Language_bindings/XPConnect/XPConnect_wrappers
+** Content Scripts   
+   https://developer.mozilla.org/en-US/Add-ons/SDK/Guides/Content_Scripts
+** File I/O
+   https://developer.mozilla.org/en-US/Add-ons/Code_snippets/File_I_O
+** DOM(Node) Access
+   https://developer.mozilla.org/en-US/docs/Web/API/Node
+   
+* Log
+** [2014-05-19 17:03]
+  1. Create *Questions* node, add 6 questions.
+  2. Create *Answers* node.
+** [2014-05-23 14:34]
+  1. Cookie management DONE
+     
+
+
+    
+      
